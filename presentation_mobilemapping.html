@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="generator" content="pandoc">
+        <meta name="author" content="Division des enseignements en informatique" />
+        <meta name="dcterms.date" content="2017-01-01" />
+        <title>PanoView</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <!-- For syntax highlighting -->
+        <style type="text/css">code{white-space: pre;}</style>
+        <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+        </style>
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+
+
+	<!-- Styles ENSG-IGN -->
+	<link rel="stylesheet" href="css/ign.css">
+
+        <!-- Printing and PDF exports -->
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script type="text/javascript">
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'reveal.js/css/print/'+ (window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper') + '.css';
+            link.media = 'print';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" type="text/javascript" src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <!-- -H/- -include-in-header -->
+    </head>
+    <body>
+        <!-- -B/- -include-before-body -->
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+              <section>
+                <h1>PanoView : visualisation d'images panoramiques couleur à partir des images brutes acquises par Stéréopolis</h1>
+                <h3>Commanditaire : Jean-Pierre PAPELARD (DIAS / MATIS)</h3>
+                <h3>Emmanuel BOURASSIN - 11 février 2019</h3>
+                </section>
+
+
+                <!-- - -toc/- -table-of-contents -->
+
+            <!-- ne pas indenter le $body$ sinon les codes (highlight) vont l'être aussi !!! -->
+<section id="section0" class="level1">
+  <section id="section0-0" class="level2">
+  <h2>Sommaire</h2>
+  <ul>
+    <li class="fragment grow">Rappel du contexte</li>
+    <li class="fragment grow">Fonctionnalités développées</li>
+    <li class="fragment grow">Perspectives</li>
+    <li class="fragment grow">Retour sur expérience</li>
+  </ul>
+
+  </section>
+</section>
+
+<section id="contexte" class="level2">
+  <h1>Rappel du contexte</h1>
+  <section id="context-1" class="level2">
+    <h2>Sommaire</h2>
+    <ul>
+      <li class="fragment grow">Rappel du contexte</li>
+      <li>Fonctionnalités développées</li>
+      <li>Perspectives</li>
+      <li>Retour sur expérience</li>
+    </ul>
+  </section>
+
+  <section id="context-2" class="level2">
+    <h3>Stéréopolis</h3>
+    <img src="image/stereopolis_v2.png" alt="">
+  </section>
+
+  <section id="context-5" class="level2">
+    <h3>Panoramique</h3>
+    <img src="image/generationPano.png" alt="">
+  </section>
+
+  <section id="context-3" class="level2">
+    <h3>???</h3>
+    <img src="image/???.png" alt="">
+  </section>
+
+</section>
+
+<section id="dev" class="level1">
+  <h1>Fonctionnalités développées</h1>
+
+  <section id="dev-0" class="level2">
+    <h2>Sommaire</h2>
+    <ul>
+      <li>Rappel du contexte</li>
+      <li class="fragment grow">Fonctionnalités développées</li>
+      <li>Perspectives</li>
+      <li>Retour sur expérience</li>
+    </ul>
+  </section>
+
+  <section id="dev-1" class="level2">
+    <h3>Grandes Fonctionnalités</h3>
+    <img src="image/realise.png" alt="">
+  </section>
+
+  <section id="dev-2" class="level2">
+    <h3>Diagramme de classes</h3>
+    <img src="image/classes_PanoView.png" alt="">
+  </section>
+
+  <section id="dev-3" class="level2">
+    <h3>Interface</h3>
+    <img src="image/interface.png" alt="">
+  </section>
+
+  <section id="dev-4" class="level2">
+    <h3>Démo</h3>
+    <img src="image/visu3.gif" alt="">
+  </section>
+</section>
+
+<section id="perspect" class="level1">
+  <h1>Perspectives</h1>
+
+  <section id="perspect-0" class="level2">
+    <h2>Sommaire</h2>
+    <ul>
+      <li>Rappel du contexte</li>
+      <li>Fonctionnalités développées</li>
+      <li class="fragment grow">Perspectives</li>
+      <li>Retour sur expérience</li>
+    </ul>
+  </section>
+
+
+  <section id="perspect-1" class="level2">
+    <h3>Cf. phase d'analyse</h3>
+    <img src="image/persp.png" alt="">
+  </section>
+
+  <section id="perspect-2" class="level2">
+    <h3>Cartographie</h3>
+    <img src="image/carto.png" alt="">
+  </section>
+
+  <section id="perspect-3" class="level2">
+    <h3>Navigation</h3>
+    <img src="image/nav.png" alt="">
+  </section>
+
+  <section id="perspect-3" class="level2">
+    <h3>Vue immersive</h3>
+    <img src="image/imm.png" alt="">
+  </section>
+
+</section>
+
+<section id="retour" class="level1">
+  <h1>Retour sur expérience</h1>
+
+  <section id="retour-0" class="level2">
+    <h2>Sommaire</h2>
+    <ul>
+      <li>Rappel du contexte</li>
+      <li>Fonctionnalités développées</li>
+      <li>Perspectives</li>
+      <li class="fragment grow">Retour sur expérience</li>
+    </ul>
+  </section>
+
+  <section id="retour-1" class="level2">
+    <h2>Difficultés rencontrées</h2>
+  </section>
+
+  <section id="retour-2" class="level2">
+    <h2>Si c'était à refaire...</h2>
+  </section>
+
+  <section id="retour-3" class="level2">
+    <h2>Conclusion</h2>
+  </section>
+
+
+</section>
+
+
+<section id="merci" class="level1">
+  <section id="merci-0" class="level2">
+  <h2>Merci à Jean-Pierre PAPELARD pour son aide tout au long du projet</h2>
+  </section>
+</section>
+
+<section id="question" class="level1">
+  <section id="question-0" class="level2">
+  <h2>Des questions ?</h2>
+  </section>
+</section>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="reveal.js/lib/js/head.min.js"></script>
+        <script type="text/javascript" src="reveal.js/js/reveal.js"></script>
+
+        <script type="text/javascript">
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                /* mettre une taille en pixel sinon l'overview ne fonctionne plus */
+                width: 1200,
+                height: 800,
+                controls: true,                                 // Display controls in the bottom right corner
+                progress: true,                                 // Display a presentation progress bar
+                history: true,                                  // Push each slide change to the browser history
+                center: true, // Vertical centering of slides
+                minScale: 0.2, // Bounds for smallestpossible content scale
+                maxScale: 1.5, // Bounds for largest possible content scale
+                slideNumber: true, // Display the page number of the current slide
+                autoSlide: 0, // Slide every duration milliseconds
+
+                theme: 'solarized', // available themes are in /css/theme
+                transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    // { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    /* ne pas activer highlight sinon la colorisation syntaxique ne fonctionne plus ? */
+                    // { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }//,
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+        <!-- -A/- -include-after-body -->
+        <!-- comme le footer contient des variables, on le met dans le gabarit car
+             les variables ne sont pas interprétées via -A de pandoc -->
+    </body>
+</html>
